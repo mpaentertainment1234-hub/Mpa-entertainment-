@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MPA Entertainment | Official</title>
+<meta name="description" content="Join MPA Entertainment. Apply to audition or access the staff portal.">
+<style>
+:root{--bg:#05070d;--panel:#0c1220;--panel2:#101a2d;--blue:#1677ff;--cyan:#45b7ff;--text:#f5f8ff;--muted:#9baac2;--line:#1d2d49}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#10264b 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,22px);border-bottom:1px solid #ffffff12;position:sticky;top:0;background:#05070de8;backdrop-filter:blur(14px);z-index:5}
+.brand{font-weight:900;letter-spacing:1.5px;font-size:19px}.brand span{color:var(--cyan)}nav{display:flex;gap:22px}nav a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:700}nav a:hover{color:white}
+.wrap{width:min(1080px,90%);margin:auto}.hero{min-height:590px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:44px;padding:65px 0}
+.eyebrow{color:var(--cyan);font-size:11px;letter-spacing:3px;font-weight:900}.hero h1{font-size:clamp(42px,7vw,76px);line-height:.98;margin:18px 0}.hero h1 span{color:var(--cyan)}.hero p{color:var(--muted);line-height:1.7;max-width:510px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{border:0;border-radius:10px;padding:14px 20px;font-weight:900;cursor:pointer;text-decoration:none;display:inline-flex;justify-content:center;align-items:center}.primary{background:linear-gradient(100deg,var(--blue),var(--cyan));color:white}.secondary{border:1px solid #31517e;color:white;background:#0b1424}
+.hero-art{height:370px;border:1px solid #23416c;border-radius:26px;background:linear-gradient(145deg,#102c56,#07101f 65%);position:relative;overflow:hidden;display:grid;place-items:center;box-shadow:0 25px 90px #006bff22}
+.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #58b9ff44;border-radius:50%;width:340px;height:340px}.hero-art:after{width:240px;height:240px}.orb{width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#b6e5ff,#1680ff 35%,#07152d 72%);box-shadow:0 0 90px #1680ff99;z-index:1}
+.art-label{position:absolute;bottom:22px;left:24px;font-size:11px;letter-spacing:3px;color:#b9d9ff;font-weight:800}
+section{padding:52px 0}.section-head{text-align:center;margin-bottom:28px}.section-head h2{font-size:32px;margin:8px}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:linear-gradient(145deg,#101a2c,#090f1b);border:1px solid var(--line);border-radius:18px;padding:26px;min-height:190px}.card .symbol{font-size:28px}.card h3{margin:15px 0 8px}.card p{color:var(--muted);line-height:1.6;font-size:14px}.card button{margin-top:12px}
+.form-shell{max-width:680px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px}
+label{display:block;font-size:12px;font-weight:800;color:#dce8fb;margin:15px 0 7px}input,select,textarea{width:100%;background:#070d18;color:white;border:1px solid #263a5b;border-radius:9px;padding:13px;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--cyan)}textarea{min-height:95px;resize:vertical}.hint{color:var(--muted);font-size:12px;line-height:1.5}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.hidden{display:none!important}.notice{padding:12px;border-radius:9px;background:#10233d;color:#b9ddff;font-size:13px;margin-top:14px}.danger{background:#35151c;color:#ffc4cc}.success{background:#103323;color:#b7f4cf}
+footer{border-top:1px solid #ffffff12;padding:26px 5vw;color:var(--muted);font-size:12px;text-align:center;margin-top:60px}
+@media(max-width:760px){nav{gap:12px}nav a{font-size:11px}.hero{grid-template-columns:1fr;padding:52px 0}.hero-art{height:250px}.cards{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.brand{font-size:15px}}
+</style>
+</head>
+<body>
+<header><div class="brand">MPA <span>ENTERTAINMENT</span></div><nav><a href="#home">HOME</a><a href="#portals">PORTALS</a><a href="#audition">AUDITIONS</a></nav></header>
+<main class="wrap">
+<section class="hero" id="home">
+ <div><div class="eyebrow">TALENT • CREATIVITY • ENTERTAINMENT</div><h1>YOUR STAGE.<br><span>YOUR MOMENT.</span></h1><p>Welcome to MPA Entertainment — a place for bold talent, fresh creativity and the next generation of performers. Take your place in the spotlight.</p>
+ <div class="actions"><a class="btn primary" href="#audition">APPLY FOR AN AUDITION</a><a class="btn secondary" href="#portals">STAFF ACCESS</a></div></div>
+ <div class="hero-art"><div class="orb"></div><div class="art-label">THE NEXT BIG THING STARTS HERE</div></div>
+</section>
+<section id="portals"><div class="section-head"><div class="eyebrow">CHOOSE YOUR SPACE</div><h2>ENTER MPA</h2><p>Two dedicated areas. One creative community.</p></div>
+ <div class="cards">
+  <article class="card"><div class="symbol">🔐</div><h3>Staff Login</h3><p>Private access for approved MPA Entertainment team members.</p><button class="btn secondary" onclick="showPanel('staff')">OPEN STAFF LOGIN</button></article>
+  <article class="card"><div class="symbol">🎤</div><h3>Audition Area</h3><p>Show us what you can do. Applications are open for singers, dancers and actors.</p><a class="btn primary" href="#audition">START YOUR APPLICATION</a></article>
+ </div>
+</section>
+<section id="staff" class="hidden"><div class="section-head"><div class="eyebrow">AUTHORIZED PERSONNEL ONLY</div><h2>STAFF PORTAL</h2><p>Sign in using your approved staff account.</p></div>
+ <div class="form-shell"><form id="staffForm"><label>Email address</label><input id="staffEmail" type="email" required autocomplete="username" placeholder="staff@mpa.example"><label>Password</label><input id="staffPassword" type="password" required autocomplete="current-password" placeholder="Your password"><button class="btn primary" style="width:100%;margin-top:18px" type="submit">SIGN IN SECURELY</button></form><div id="staffMsg" class="notice">Staff accounts must be created and approved by an administrator. Public sign-up is disabled.</div><div id="staffDashboard" class="hidden"><h3>Welcome to the staff area</h3><p class="hint">You are signed in with staff permissions.</p><button class="btn secondary" onclick="signOut()">SIGN OUT</button></div></div>
+</section>
+<section id="audition"><div class="section-head"><div class="eyebrow">YOUR SPOTLIGHT STARTS HERE</div><h2>APPLY TO AUDITION</h2><p>Tell us about yourself and the talent you want to share.</p></div>
+ <div class="form-shell"><form id="auditionForm">
+ <div class="form-row"><div><label>Full name *</label><input name="full_name" required maxlength="100" placeholder="Your full name"></div><div><label>Email address *</label><input name="email" type="email" required placeholder="you@example.com"></div></div>
+ <div class="form-row"><div><label>Age *</label><input name="age" type="number" min="1" max="120" required placeholder="Your age"></div><div><label>Talent category *</label><select name="category" required><option value="">Choose a category</option><option>Singing</option><option>Dancing</option><option>Acting</option></select></div></div>
+ <label>Tell us about your talent *</label><textarea name="about" required maxlength="1500" placeholder="Share your experience, style or what makes you unique..."></textarea>
+ <label>Audition video link (optional)</label><input name="video_url" type="url" placeholder="https://..."><p class="hint">Upload your video to a file-sharing service and paste a viewable link. Do not share private or sensitive information.</p>
+ <label><input type="checkbox" required style="width:auto;margin-right:8px">I confirm that the information above is accurate and I have permission to submit it.</label>
+ <button class="btn primary" style="width:100%;margin-top:18px" type="submit">SUBMIT AUDITION APPLICATION</button>
+ </form><div id="auditionMsg" class="notice">Applications are submitted securely once the site owner connects the free database setup.</div></div>
+</section>
+</main>
+<footer>© <span id="year"></span> MPA ENTERTAINMENT • TALENT. CREATIVITY. OPPORTUNITY.</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL = "PASTE_YOUR_SUPABASE_PROJECT_URL_HERE";
+const SUPABASE_ANON_KEY = "PASTE_YOUR_SUPABASE_ANON_KEY_HERE";
+let sb = null, currentUser = null;
+if (window.supabase && SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("PASTE_") && !SUPABASE_ANON_KEY.includes("PASTE_")) {
+  sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+}
+document.getElementById("year").textContent = new Date().getFullYear();
+function showPanel(id){document.getElementById(id).classList.remove("hidden");document.getElementById(id).scrollIntoView({behavior:"smooth"});}
+function message(id,text,kind="notice"){const el=document.getElementById(id);el.className="notice "+kind;el.textContent=text;}
+document.getElementById("staffForm").addEventListener("submit",async e=>{
+ e.preventDefault(); if(!sb){message("staffMsg","Setup needed: add your Supabase project URL and anon key, then run setup.sql.","danger");return;}
+ const email=document.getElementById("staffEmail").value, password=document.getElementById("staffPassword").value;
+ const {data,error}=await sb.auth.signInWithPassword({email,password});
+ if(error){message("staffMsg",error.message,"danger");return;}
+ currentUser=data.user;
+ const {data:profile,error:profileError}=await sb.from("profiles").select("role").eq("id",currentUser.id).single();
+ if(profileError || !profile || profile.role!=="staff" && profile.role!=="admin"){
+   await sb.auth.signOut(); currentUser=null; message("staffMsg","This account does not have staff access. Contact your administrator.","danger");return;
+ }
+ document.getElementById("staffForm").classList.add("hidden");
+ document.getElementById("staffMsg").classList.add("hidden");
+ document.getElementById("staffDashboard").classList.remove("hidden");
+});
+document.getElementById("auditionForm").addEventListener("submit",async e=>{
+ e.preventDefault(); if(!sb){message("auditionMsg","Setup needed: add your Supabase project URL and anon key, then run setup.sql. Your application has not been sent.","danger");return;}
+ const f=new FormData(e.target), payload={full_name:f.get("full_name"),email:f.get("email"),age:Number(f.get("age")),category:f.get("category"),about:f.get("about"),video_url:f.get("video_url")||null};
+ const {error}=await sb.from("audition_applications").insert(payload);
+ if(error){message("auditionMsg","Could not submit: "+error.message,"danger");return;}
+ e.target.reset(); message("auditionMsg","Application submitted! Thank you for auditioning with MPA Entertainment.","success");
+});
+async function signOut(){if(sb)await sb.auth.signOut();currentUser=null;document.getElementById("staffDashboard").classList.add("hidden");document.getElementById("staffForm").classList.remove("hidden");document.getElementById("staffMsg").classList.remove("hidden");}
+</script>
+</body></html>
